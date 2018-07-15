@@ -343,8 +343,6 @@ nav h1 a {
   margin: 0 0 30px;
   overflow: hidden;
   padding: 18px 20px 20px;
-  position: relative;
-  width: 85%;
 }
 
 #reviews-list li p {
@@ -386,12 +384,50 @@ nav h1 a {
     margin-top: 20px;
     font-size: 1.3em;
   }
+
+  .inside #maincontent #restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .inside #maincontent #restaurant-container div {
+    flex-basis: 45%;
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+
+  #restaurant-container {
+      padding: 5px 40px 30px;
+  }
+
+  #restaurant-cuisine {
+    margin: 5px 0 20px;
+  }
+
+  .description-container {
+    padding-top: 68px;
+  }
+
+  #reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #reviews-list li {
+    margin: 0 10px 30px;
+    flex-basis: 43%;
+    flex-grow: 1;
+  }
 }
 
 @media screen and (min-width: 1080px) {
   #restaurants-list li {
     -ms-flex-preferred-size: 27%;
     flex-basis: 27%;
+  }
+
+  #reviews-list li {
+    flex-basis: 26%;
   }
 }
 
