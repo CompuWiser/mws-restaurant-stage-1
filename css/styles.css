@@ -159,6 +159,12 @@ nav h1 a {
   background-color: #ccc;
 }
 
+.leaflet-touch .leaflet-bar a {
+  width: 48px !important;
+  height: 38px !important;
+  padding-top: 10px;
+}
+
 /* ====================== Restaurant Filtering ====================== */
 
 .filter-options {
@@ -200,6 +206,10 @@ nav h1 a {
   flex-grow: 1;
   -ms-flex-preferred-size: 45%;
   flex-basis: 45%
+}
+
+.filter-options select:focus {
+  border: 3px solid orange;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -260,6 +270,10 @@ nav h1 a {
   text-decoration: none;
   text-transform: uppercase;
   width: 70%;
+}
+
+#restaurants-list li a:focus {
+    border: 3px solid gray;
 }
 
 /* ====================== Restaurant Details ====================== */

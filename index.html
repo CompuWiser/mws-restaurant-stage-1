@@ -25,15 +25,15 @@
   <div class="container">
     <a href="#neighborhoods-select" class="skip-link">Skip to main content</a>
 
-    <header>
-      <nav>
+    <header role="banner">
+      <nav role="navigation">
         <h1>
           <a href="/">Restaurant Reviews</a>
         </h1>
       </nav>
     </header>
 
-    <main id="maincontent">
+    <main id="maincontent" role="main">
 
       <section id="map-container" aria-label="Available restaurants on map" aria-hidden="true">
         <div id="map"></div>
@@ -59,11 +59,11 @@
 
     <script src="js/dbhelper.js"></script>
     <script src="js/main.js"></script>
-    <!--<script src="js/SWController.js"></script>-->
+    <script src="js/SWController.js"></script>
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
 
 
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
       Copyright (c) 2017
       <a href="/">
         <strong>Restaurant Reviews</strong>

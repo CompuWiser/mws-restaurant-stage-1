@@ -160,6 +160,7 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement("img");
   image.className = "restaurant-img";
+  image.alt = restaurant.name + " Restaurant Image";
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
@@ -176,7 +177,7 @@ createRestaurantHTML = (restaurant) => {
   li.append(address);
 
   const more = document.createElement("a");
-  more.setAttribute("aria-label", "More details about " + restaurant.name + " restaurant");
+  more.setAttribute("aria-label", restaurant.name + " restaurant details");
   more.innerHTML = "View Details";
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
